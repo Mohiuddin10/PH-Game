@@ -176,6 +176,35 @@ nav {
     width: auto;
 }
 
+
+
+/* =========> Online game section  */
+.online-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+.online-cards {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    gap: 1.25rem;
+    margin-top: 48px;
+    /* border: 1px solid gray; */
+}
+.card-img {
+    /* width: 340px; */
+    /* height: 400px; */
+}
+.online-card-title {
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px;
+    height: 60px;
+}
+
 /* responsive area  */
 /* mobile area  */
 @media screen and (max-width: 576px) {
@@ -220,6 +249,13 @@ nav {
         text-align: center;
     }
 
+    /* online game start  */
+    .online-cards {
+        flex-direction: column;
+        margin: 10%;
+    }
+    
+
 }
 
 /* tablet section  */
@@ -234,5 +270,28 @@ nav {
     }
     .hero-container {
         flex-direction: column-reverse;
+    }
+    /* =====> Gamer container  */
+    .gamer-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .img img {
+        width: 100%;
+    }
+    .gamer-content {
+        width: 100%;
+        align-items: center;
+    }
+    .purpose,
+    .gamer-description,
+    .gamer-title {
+        text-align: center;
+    }
+      /* online game start  */
+      .online-cards {
+        flex-direction: column;
+        align-items: center;
+        
     }
 }
