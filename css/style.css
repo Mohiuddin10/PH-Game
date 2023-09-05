@@ -118,31 +118,42 @@ nav {
 /* responsive area  */
 /* mobile area  */
 @media screen and (max-width: 576px) {
-    
+    nav {
+        max-height: none;
+    }
     nav,
     .menu,
     .menu > ul {
         flex-direction: column;
         gap: 2.5rem;
     }
+    .follow {
+        margin-bottom: 20px;
+    }
+
+    /* hero section  */
     .hero-container {
-        
-        flex-direction: column;
-        margin: 1rem;
+        width: 100%;
+        flex-direction: column-reverse;
+        margin: auto;
     }
     .hero-content > h2,h3 {
         margin: 0.5rem;
     }
-    .hero-content {
-        
-    }
+
 }
 
 /* tablet section  */
 @media screen and (min-width: 576px) and (max-width: 768px) {
+    nav {
+        max-height: none;
+    }
     nav,
     .menu {
         flex-direction: column;
         gap: 2.5rem;
+    }
+    .hero-container {
+        flex-direction: column-reverse;
     }
 }
